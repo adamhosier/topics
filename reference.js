@@ -27,7 +27,7 @@ function makeReferenceBox(id, x, y) {
   return $("<div></div>", {
     "class": "ref-box",
     style: "left:" + (x + 5) + "px; top:" + (y + 5) + "px",
-    html: "<h4>Reference ID: " + id + " (click for more)</h4><hr>" + getReferenceById(id).text()
+    html: "<h4>Reference ID: " + id[1] + " (click for more)</h4><hr>" + getReferenceById(id).text()
   });
 }
 
