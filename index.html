@@ -1,0 +1,141 @@
+<!--
+
+NOTES FOR GROUP:
+
+To draw a styled box:
+  <div class="box>
+    ...
+  </div>
+
+To draw a bold header in a box:
+  <h3>Title text here</h3>
+
+Horizontal line:
+  <hr>
+
+Write a paragraph of text:
+  <p>Text goes here</p>
+
+Add a reference to your text;
+  <p>Some referece<sup id="p2"></sup></p>
+'<sup>' is a superscript tag
+'id="p2"' means its a reference to the probabilistic reference 2
+          use p1, p2, p2 ... for probabilistic
+              c1, c2, c3 ... for case based
+              l1, l2, l3 ... for logic
+
+Ordered list of refernces
+  <ol>
+    <li>Reference with id 1</li>
+    <li>Another referece (id 2)</li>
+    ...
+  </ol>
+First <li> corresponds to <sup id="p1"></sup>
+
+See full code for examples :)
+
+
+View the live website at:
+https://rawgit.com/adamhosier/topics/master/index.html
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="reference.js"></script>
+</head>
+<body>
+  <div id="header">
+      <h1>Intention Recognition</h1> <h2>Techniques</h2>
+  </div>
+  <div id="navigator">
+    <div id="links">
+      <a href="#introduction">Introduction</a>
+      <a href="#probabilistic">Probabilistic</a>
+      <a href="#casebased">Case Based</a>
+      <a href="#logic">Logic</a>
+    </div>
+  </div>
+  <div id="content">
+
+    <!-- INTRODUCTION PAGE -->
+    <div class="page" id="page-introduction">
+      <div class="box">
+        <h3>Introduction</h3>
+        <hr>
+        <p>Write intro notes here</p>
+      </div>
+    </div>
+
+    <!-- PROBABILISTIC PAGE -->
+    <div class="page" id="page-probabilistic">
+      <div class="box">
+        <h3>Probabilistic</h3>
+        <hr>
+        <p>Lorem ipsum<sup id="p1"></sup> dolor sit amet, consectetur adipiscing elit. Maecenas odio dui, euismod ac lacus elementum, feugiat bibendum leo. Pellentesque dolor leo, iaculis quis dolor in, rutrum pellentesque mauris. Proin quis hendrerit arcu. Aenean molestie nulla sit amet tellus porttitor, fermentum fringilla mi imperdiet. Donec at risus ac mauris tempus vulputate nec in massa. Curabitur blandit vitae sem in aliquam. Sed ultrices metus urna, id pharetra mauris rhoncus et. Quisque vitae dignissim diam. Integer luctus elit et posuere tempus. Vivamus posuere est non mauris pellentesque ultricies. Aliquam erat volutpat. Suspendisse elit tellus, rhoncus quis tempus ut, bibendum quis quam. Donec dignissim, tortor at luctus rhoncus, magna felis sollicitudin massa, in ultricies libero lacus eu magna.<sup id="p3"></sup> Sed eros felis, pharetra in tincidunt id, eleifend sed lectus. Nunc et ligula in ante dignissim molestie. Sed efficitur facilisis libero, id lobortis tellus scelerisque ac.</p>
+        <p>Nam sollicitudin<sup id="p2"></sup> urna ut mauris maximus, vitae volutpat orci iaculis. Mauris dapibus at urna id bibendum. Etiam augue mauris, iaculis dignissim semper quis, pharetra mollis enim. Cras vitae mi a dolor interdum fermentum porta id libero. Aliquam erat volutpat. Duis augue odio, facilisis ac felis in, porttitor ullamcorper purus. Maecenas vel est nisl. Vestibulum a sem molestie, posuere urna eget, finibus mi. Nulla sit amet ligula finibus, auctor nunc a, ullamcorper ante. Praesent dapibus porttitor dolor, tempor ultricies ipsum fringilla sed. Nullam fringilla pellentesque convallis. Sed eu viverra ligula.</p>
+        <p>Nulla ac neque vitae dolor pretium accumsan vel sit amet risus. Aenean eget sagittis neque. Mauris eu maximus augue, at sollicitudin lectus. Aliquam porta sollicitudin massa in mattis. Proin ultricies urna nulla, vitae sollicitudin neque maximus condimentum. Nunc tempor at dui sed pellentesque. Praesent nulla purus, auctor auctor odio sit amet, congue sodales diam. Nulla facilisi. Morbi quis eros at metus convallis auctor quis eu odio. Proin vestibulum turpis quis viverra suscipit. Pellentesque tincidunt felis vel turpis accumsan, nec convallis diam egestas. Suspendisse potenti. Aliquam id luctus metus.</p>
+      </div>
+
+      <div class="box">
+        <h3>References</h3><hr>
+        <ol>
+          <li>Some latin words</li>
+          <li>Some more latin words</li>
+          <li>Third set of latin words are here, making this one slightly longer to see what happens to the tooltip</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- CASE BASED PAGE -->
+    <div class="page" id="page-casebased">
+      <div class="box">
+        <h3>Case Based</h3>
+        <hr>
+        <p>Lorem ipsum<sup id="c1"></sup> dolor sit amet, consectetur adipiscing elit. Maecenas odio dui, euismod ac lacus elementum, feugiat bibendum leo. Pellentesque dolor leo, iaculis quis dolor in, rutrum pellentesque mauris. Proin quis hendrerit arcu. Aenean molestie nulla sit amet tellus porttitor, fermentum fringilla mi imperdiet. Donec at risus ac mauris tempus vulputate nec in massa. Curabitur blandit vitae sem in aliquam. Sed ultrices metus urna, id pharetra mauris rhoncus et. Quisque vitae dignissim diam. Integer luctus elit et posuere tempus. Vivamus posuere est non mauris pellentesque ultricies. Aliquam erat volutpat. Suspendisse elit tellus, rhoncus quis tempus ut, bibendum quis quam. Donec dignissim, tortor at luctus rhoncus, magna felis sollicitudin massa, in ultricies libero lacus eu magna. Sed eros felis, pharetra in tincidunt id, eleifend sed lectus. Nunc et ligula in ante dignissim molestie. Sed efficitur facilisis libero, id lobortis tellus scelerisque ac.</p>
+        <p>Nam sollicitudin<sup id="c2"></sup> urna ut mauris maximus, vitae volutpat orci iaculis. Mauris dapibus at urna id bibendum. Etiam augue mauris, iaculis dignissim semper quis, pharetra mollis enim. Cras vitae mi a dolor interdum fermentum porta id libero. Aliquam erat volutpat. Duis augue odio, facilisis ac felis in, porttitor ullamcorper purus. Maecenas vel est nisl. Vestibulum a sem molestie, posuere urna eget, finibus mi. Nulla sit amet ligula finibus, auctor nunc a, ullamcorper ante. Praesent dapibus porttitor dolor, tempor ultricies ipsum fringilla sed. Nullam fringilla pellentesque convallis. Sed eu viverra ligula.</p>
+        <p>Nulla ac neque vitae dolor pretium accumsan vel sit amet risus. Aenean eget sagittis neque. Mauris eu maximus augue, at sollicitudin lectus. Aliquam porta sollicitudin massa in mattis. Proin ultricies urna nulla, vitae sollicitudin neque maximus condimentum. Nunc tempor at dui sed pellentesque. Praesent nulla purus, auctor auctor odio sit amet, congue sodales diam. Nulla facilisi. Morbi quis eros at metus convallis auctor quis eu odio. Proin vestibulum turpis quis viverra suscipit. Pellentesque tincidunt felis vel turpis accumsan, nec convallis diam egestas. Suspendisse potenti. Aliquam id luctus metus.</p>
+      </div>
+
+      <div class="box">
+        <h3>References</h3><hr>
+        <ol>
+          <li>Write</li>
+          <li>some</li>
+          <li>references</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- LOGIC PAGE -->
+    <div class="page" id="page-logic">
+      <div class="box">
+        <h3>Logic</h3>
+        <hr>
+        <p>Lorem ipsum<sup id="l1"></sup> dolor sit amet, consectetur adipiscing elit. Maecenas odio dui, euismod ac lacus elementum, feugiat bibendum leo. Pellentesque dolor leo, iaculis quis dolor in, rutrum pellentesque mauris. Proin quis hendrerit arcu. Aenean molestie nulla sit amet tellus porttitor, fermentum fringilla mi imperdiet. Donec at risus ac mauris tempus vulputate nec in massa. Curabitur blandit vitae sem in aliquam. Sed ultrices metus urna, id pharetra mauris rhoncus et. Quisque vitae dignissim diam. Integer luctus elit et posuere tempus. Vivamus posuere est non mauris pellentesque ultricies. Aliquam erat volutpat. Suspendisse elit tellus, rhoncus quis tempus ut, bibendum quis quam. Donec dignissim, tortor at luctus rhoncus, magna felis sollicitudin massa, in ultricies libero lacus eu magna. Sed eros felis, pharetra in tincidunt id, eleifend sed lectus. Nunc et ligula in ante dignissim molestie. Sed efficitur facilisis libero, id lobortis tellus scelerisque ac.</p>
+        <p>Nam sollicitudin urna ut<sup id="l2"></sup> mauris maximus, vitae volutpat orci iaculis. Mauris dapibus at urna id bibendum. Etiam augue mauris, iaculis dignissim semper quis, pharetra mollis enim. Cras vitae mi a dolor interdum fermentum porta id libero. Aliquam erat volutpat. Duis augue odio, facilisis ac felis in, porttitor ullamcorper purus. Maecenas vel est nisl. Vestibulum a sem molestie, posuere urna eget, finibus mi. Nulla sit amet ligula finibus, auctor nunc a, ullamcorper ante. Praesent dapibus porttitor dolor, tempor ultricies ipsum fringilla sed. Nullam fringilla pellentesque convallis. Sed eu viverra ligula.</p>
+        <p>Nulla ac neque vitae dolor pretium accumsan vel sit amet risus. Aenean eget sagittis neque. Mauris eu maximus augue, at sollicitudin lectus. Aliquam porta sollicitudin massa in mattis. Proin ultricies urna nulla, vitae sollicitudin neque maximus condimentum. Nunc tempor at dui sed pellentesque. Praesent nulla purus, auctor auctor odio sit amet, congue sodales diam. Nulla facilisi. Morbi quis eros at metus convallis auctor quis eu odio. Proin vestibulum turpis quis viverra suscipit. Pellentesque tincidunt felis vel turpis accumsan, nec convallis diam egestas. Suspendisse potenti. Aliquam id luctus metus.</p>
+      </div>
+
+      <div class="box">
+        <h3>References</h3><hr>
+        <ol>
+          <li>Logic</li>
+          <li>references</li>
+          <li>go</li>
+          <li>here</li>
+        </ol>
+      </div>
+    </div>
+
+    <div id="footer">
+      <span>Adam Hosier</span>
+      <span>2015</span>
+    </div>
+  </div>
+</body>
+</html>
