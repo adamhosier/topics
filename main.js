@@ -1,4 +1,4 @@
-var FADE_TIME = 100;
+var FADE_TIME = 1000;
 
 $(document).ready(function(){
 
