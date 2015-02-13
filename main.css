@@ -126,7 +126,7 @@ a.anchor {
   text-align:center;
   background:#f2f2f2;
   padding:10px 0 7px 0;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid #e0e0e0;
   position:fixed;
   top:60px;
   height:30px;
@@ -135,12 +135,13 @@ a.anchor {
 
 #sub-navigator {
   text-align:center;
-  background:#fff;
+  background:#e9e9e9;
   padding:5px 0;
   position:fixed;
-  top:107px;
+  top:108px;
   width:100%;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid #d8d8d8;
+  font-size:14px;
 }
 
 #links a {
@@ -157,6 +158,23 @@ a.anchor {
 #links a:hover {
   border-bottom-color:#48e;
   color:#111;
+}
+
+#sub-links a {
+  text-decoration:none;
+  margin: 0 20px;
+  height:20px;
+  line-height:20px;
+  display:inline-block;
+  color:#999;
+  border-bottom:1px solid rgba(0,0,0,0);
+  transition:0.3s;
+  cursor:pointer;
+}
+
+#sub-links a:hover {
+  border-bottom-color:#6af;
+  color:#444;
 }
 
 #content {
