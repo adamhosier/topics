@@ -24,4 +24,8 @@ $(document).ready(function(){
     }
   })
 
+  $(".box").prepend(function() {
+    return "<h3>" + $(this).attr("title") + "</h3><hr>";
+  });
+
 });

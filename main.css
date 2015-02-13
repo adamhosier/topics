@@ -129,7 +129,18 @@ a.anchor {
   border-bottom:1px solid #ddd;
   position:fixed;
   top:60px;
+  height:30px;
   width:100%;
+}
+
+#sub-navigator {
+  text-align:center;
+  background:#fff;
+  padding:5px 0;
+  position:fixed;
+  top:107px;
+  width:100%;
+  border-bottom:1px solid #ddd;
 }
 
 #links a {
@@ -150,7 +161,7 @@ a.anchor {
 
 #content {
   width:1200px;
-  margin:120px auto;
+  margin:150px auto;
 }
 
 #content p, #content ol {

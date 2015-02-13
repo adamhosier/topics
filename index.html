@@ -2,16 +2,13 @@
 
 NOTES FOR GROUP:
 
-To draw a styled box:
-  <div class="box>
+To draw a styled box with the bold header "Example":
+  <div class="box" title="Example">
     ...
   </div>
-
-To draw a bold header in a box:
-  <h3>Title text here</h3>
-
-Horizontal line:
-  <hr>
+NOTE: The sub-navigator will generate links based on every <div id="box"> element
+      So if you had 3 boxes, with titles "eg1", "eg2", "eg3", there will be links
+      in the sub-navigator to each of these three boxes
 
 Write a paragraph of text:
   <p>Text goes here</p>
@@ -60,29 +57,27 @@ https://rawgit.com/adamhosier/topics/master/index.html
       <a href="#logic">Logic</a>
     </div>
   </div>
+  <div id="sub-navigator">
+    <!-- SUB LINKS WILL BE PUT HERE -->
+  </div>
   <div id="content">
 
     <!-- INTRODUCTION PAGE -->
     <div class="page" id="page-introduction">
-      <div class="box">
-        <h3>Introduction</h3>
-        <hr>
+      <div class="box" title="Introduction">
         <p>Write intro notes here</p>
       </div>
     </div>
 
     <!-- PROBABILISTIC PAGE -->
     <div class="page" id="page-probabilistic">
-      <div class="box">
-        <h3>Probabilistic</h3>
-        <hr>
+      <div class="box" title="Probabilistic">
         <p>Lorem ipsum<sup id="p1"></sup> dolor sit amet, consectetur adipiscing elit. Maecenas odio dui, euismod ac lacus elementum, feugiat bibendum leo. Pellentesque dolor leo, iaculis quis dolor in, rutrum pellentesque mauris. Proin quis hendrerit arcu. Aenean molestie nulla sit amet tellus porttitor, fermentum fringilla mi imperdiet. Donec at risus ac mauris tempus vulputate nec in massa. Curabitur blandit vitae sem in aliquam. Sed ultrices metus urna, id pharetra mauris rhoncus et. Quisque vitae dignissim diam. Integer luctus elit et posuere tempus. Vivamus posuere est non mauris pellentesque ultricies. Aliquam erat volutpat. Suspendisse elit tellus, rhoncus quis tempus ut, bibendum quis quam. Donec dignissim, tortor at luctus rhoncus, magna felis sollicitudin massa, in ultricies libero lacus eu magna.<sup id="p3"></sup> Sed eros felis, pharetra in tincidunt id, eleifend sed lectus. Nunc et ligula in ante dignissim molestie. Sed efficitur facilisis libero, id lobortis tellus scelerisque ac.</p>
         <p>Nam sollicitudin<sup id="p2"></sup> urna ut mauris maximus, vitae volutpat orci iaculis. Mauris dapibus at urna id bibendum. Etiam augue mauris, iaculis dignissim semper quis, pharetra mollis enim. Cras vitae mi a dolor interdum fermentum porta id libero. Aliquam erat volutpat. Duis augue odio, facilisis ac felis in, porttitor ullamcorper purus. Maecenas vel est nisl. Vestibulum a sem molestie, posuere urna eget, finibus mi. Nulla sit amet ligula finibus, auctor nunc a, ullamcorper ante. Praesent dapibus porttitor dolor, tempor ultricies ipsum fringilla sed. Nullam fringilla pellentesque convallis. Sed eu viverra ligula.</p>
         <p>Nulla ac neque vitae dolor pretium accumsan vel sit amet risus. Aenean eget sagittis neque. Mauris eu maximus augue, at sollicitudin lectus. Aliquam porta sollicitudin massa in mattis. Proin ultricies urna nulla, vitae sollicitudin neque maximus condimentum. Nunc tempor at dui sed pellentesque. Praesent nulla purus, auctor auctor odio sit amet, congue sodales diam. Nulla facilisi. Morbi quis eros at metus convallis auctor quis eu odio. Proin vestibulum turpis quis viverra suscipit. Pellentesque tincidunt felis vel turpis accumsan, nec convallis diam egestas. Suspendisse potenti. Aliquam id luctus metus.</p>
       </div>
 
-      <div class="box">
-        <h3>References</h3><hr>
+      <div class="box" title="References">
         <ol>
           <li>Some latin words</li>
           <li>Some more latin words</li>
@@ -93,16 +88,13 @@ https://rawgit.com/adamhosier/topics/master/index.html
 
     <!-- CASE BASED PAGE -->
     <div class="page" id="page-casebased">
-      <div class="box">
-        <h3>Case Based</h3>
-        <hr>
+      <div class="box" title="Case Based">
         <p>Lorem ipsum<sup id="c1"></sup> dolor sit amet, consectetur adipiscing elit. Maecenas odio dui, euismod ac lacus elementum, feugiat bibendum leo. Pellentesque dolor leo, iaculis quis dolor in, rutrum pellentesque mauris. Proin quis hendrerit arcu. Aenean molestie nulla sit amet tellus porttitor, fermentum fringilla mi imperdiet. Donec at risus ac mauris tempus vulputate nec in massa. Curabitur blandit vitae sem in aliquam. Sed ultrices metus urna, id pharetra mauris rhoncus et. Quisque vitae dignissim diam. Integer luctus elit et posuere tempus. Vivamus posuere est non mauris pellentesque ultricies. Aliquam erat volutpat. Suspendisse elit tellus, rhoncus quis tempus ut, bibendum quis quam. Donec dignissim, tortor at luctus rhoncus, magna felis sollicitudin massa, in ultricies libero lacus eu magna. Sed eros felis, pharetra in tincidunt id, eleifend sed lectus. Nunc et ligula in ante dignissim molestie. Sed efficitur facilisis libero, id lobortis tellus scelerisque ac.</p>
         <p>Nam sollicitudin<sup id="c2"></sup> urna ut mauris maximus, vitae volutpat orci iaculis. Mauris dapibus at urna id bibendum. Etiam augue mauris, iaculis dignissim semper quis, pharetra mollis enim. Cras vitae mi a dolor interdum fermentum porta id libero. Aliquam erat volutpat. Duis augue odio, facilisis ac felis in, porttitor ullamcorper purus. Maecenas vel est nisl. Vestibulum a sem molestie, posuere urna eget, finibus mi. Nulla sit amet ligula finibus, auctor nunc a, ullamcorper ante. Praesent dapibus porttitor dolor, tempor ultricies ipsum fringilla sed. Nullam fringilla pellentesque convallis. Sed eu viverra ligula.</p>
         <p>Nulla ac neque vitae dolor pretium accumsan vel sit amet risus. Aenean eget sagittis neque. Mauris eu maximus augue, at sollicitudin lectus. Aliquam porta sollicitudin massa in mattis. Proin ultricies urna nulla, vitae sollicitudin neque maximus condimentum. Nunc tempor at dui sed pellentesque. Praesent nulla purus, auctor auctor odio sit amet, congue sodales diam. Nulla facilisi. Morbi quis eros at metus convallis auctor quis eu odio. Proin vestibulum turpis quis viverra suscipit. Pellentesque tincidunt felis vel turpis accumsan, nec convallis diam egestas. Suspendisse potenti. Aliquam id luctus metus.</p>
       </div>
 
-      <div class="box">
-        <h3>References</h3><hr>
+      <div class="box" title="References">
         <ol>
           <li>Write</li>
           <li>some</li>
@@ -113,16 +105,13 @@ https://rawgit.com/adamhosier/topics/master/index.html
 
     <!-- LOGIC PAGE -->
     <div class="page" id="page-logic">
-      <div class="box">
-        <h3>Logic</h3>
-        <hr>
+      <div class="box" title="Logic">
         <p>Lorem ipsum<sup id="l1"></sup> dolor sit amet, consectetur adipiscing elit. Maecenas odio dui, euismod ac lacus elementum, feugiat bibendum leo. Pellentesque dolor leo, iaculis quis dolor in, rutrum pellentesque mauris. Proin quis hendrerit arcu. Aenean molestie nulla sit amet tellus porttitor, fermentum fringilla mi imperdiet. Donec at risus ac mauris tempus vulputate nec in massa. Curabitur blandit vitae sem in aliquam. Sed ultrices metus urna, id pharetra mauris rhoncus et. Quisque vitae dignissim diam. Integer luctus elit et posuere tempus. Vivamus posuere est non mauris pellentesque ultricies. Aliquam erat volutpat. Suspendisse elit tellus, rhoncus quis tempus ut, bibendum quis quam. Donec dignissim, tortor at luctus rhoncus, magna felis sollicitudin massa, in ultricies libero lacus eu magna. Sed eros felis, pharetra in tincidunt id, eleifend sed lectus. Nunc et ligula in ante dignissim molestie. Sed efficitur facilisis libero, id lobortis tellus scelerisque ac.</p>
         <p>Nam sollicitudin urna ut<sup id="l2"></sup> mauris maximus, vitae volutpat orci iaculis. Mauris dapibus at urna id bibendum. Etiam augue mauris, iaculis dignissim semper quis, pharetra mollis enim. Cras vitae mi a dolor interdum fermentum porta id libero. Aliquam erat volutpat. Duis augue odio, facilisis ac felis in, porttitor ullamcorper purus. Maecenas vel est nisl. Vestibulum a sem molestie, posuere urna eget, finibus mi. Nulla sit amet ligula finibus, auctor nunc a, ullamcorper ante. Praesent dapibus porttitor dolor, tempor ultricies ipsum fringilla sed. Nullam fringilla pellentesque convallis. Sed eu viverra ligula.</p>
         <p>Nulla ac neque vitae dolor pretium accumsan vel sit amet risus. Aenean eget sagittis neque. Mauris eu maximus augue, at sollicitudin lectus. Aliquam porta sollicitudin massa in mattis. Proin ultricies urna nulla, vitae sollicitudin neque maximus condimentum. Nunc tempor at dui sed pellentesque. Praesent nulla purus, auctor auctor odio sit amet, congue sodales diam. Nulla facilisi. Morbi quis eros at metus convallis auctor quis eu odio. Proin vestibulum turpis quis viverra suscipit. Pellentesque tincidunt felis vel turpis accumsan, nec convallis diam egestas. Suspendisse potenti. Aliquam id luctus metus.</p>
       </div>
 
-      <div class="box">
-        <h3>References</h3><hr>
+      <div class="box" title="References">
         <ol>
           <li>Logic</li>
           <li>references</li>
