@@ -87,6 +87,7 @@ a.anchor {
   border-radius:3px;
   box-shadow:0 0 6px 1px rgba(0,0,0,0.125);
   transition:0.2s;
+  overflow:auto;
 }
 
 .ref-box {
