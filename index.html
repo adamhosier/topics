@@ -1,42 +1,3 @@
-<!--
-
-NOTES FOR GROUP:
-
-To draw a styled box with the bold header "Example":
-  <div class="box" title="Example">
-    ...
-  </div>
-NOTE: The sub-navigator will generate links based on every <div id="box"> element
-      So if you had 3 boxes, with titles "eg1", "eg2", "eg3", there will be links
-      in the sub-navigator to each of these three boxes
-
-Write a paragraph of text:
-  <p>Text goes here</p>
-
-Add a reference to your text;
-  <p>Some referece<sup id="p2"></sup></p>
-'<sup>' is a superscript tag
-'id="p2"' means its a reference to the probabilistic reference 2
-          use p1, p2, p2 ... for probabilistic
-              c1, c2, c3 ... for case based
-              l1, l2, l3 ... for logic
-
-Ordered list of refernces
-  <ol>
-    <li>Reference with id 1</li>
-    <li>Another referece (id 2)</li>
-    ...
-  </ol>
-First <li> corresponds to <sup id="p1"></sup>
-
-See full code for examples :)
-
-
-View the live website at:
-https://rawgit.com/adamhosier/topics/master/index.html
-
--->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -108,7 +69,7 @@ https://rawgit.com/adamhosier/topics/master/index.html
       </div>
 
       <div class="box" title="Algorithms To Find Intentions">
-        <p>There are many algorithms commonly used to ﬁnd various pieces of information about the changing sequence of states N, over time t, given an sequence of observations M. The main algorithms are, the forward algorithm (for a process called ﬁltering), the forward-backward algorithm (forward can be combined with backward for a process called smoothing) and the Viterbi algorithm (used to ﬁnd the likelihood of a state sequence). Filtering uses the forward algorithm to ﬁnd a probability distribution of what state the sequence is currently at. Smoothing uses the same forward algorithm to also ﬁnd a probability distribution of what state the sequence is currently at. However, there is a subtle difference as smoothing looks at what state the sequence was in at a past point in time t, not the most recent time - essentially meaning that information gained later in the sequence of observations can be used to give a more precise prediction of where the states preceding the extra observations were. This retrospective linking of observations is why the word ‘backward’ is used, to imply information gained from the future is used to trace back the steps that led there increasing the accuracy of a prediction compared to one without the extra observations. Finally, the Viterbi algorithm is a process that doesn’t only predict a state at a time t, but the whole sequence of states over a range of times.</p>
+        <p>There are many algorithms commonly used to ﬁnd various pieces of information about the changing sequence of states N, over time t, given an sequence of observations M. The main algorithms are, the forward algorithm (for a process called ﬁltering), the forward-backward algorithm (forward can be combined with backward for a process called smoothing) and the Viterbi algorithm (used to ﬁnd the likelihood of a state sequence). Filtering uses the forward algorithm to ﬁnd a probability distribution of what state the sequence is currently at. Smoothing uses the same forward algorithm to ﬁnd a probability distribution of what state the sequence was previously at. There is a subtle difference between filtering and smoothing as smoothing looks at what state the sequence was in at a past point in time t, not the most recent time - essentially meaning that information gained later in the sequence of observations can be used to give a more precise prediction of where the states preceding the extra observations were. This retrospective linking of observations is why the word ‘backward’ is used, to imply information gained from the future is used to trace back the steps that led there increasing the accuracy of a prediction compared to one without the extra observations. Finally, the Viterbi algorithm is a process that doesn’t only predict a state at a time t, but the whole sequence of states over a range of times.</p>
         <p>Based on the context of Intention Recognition, the most appropriate algorithms to employ are generally the forward and forward-backward, algorithms. For most contexts, especially when constantly monitoring and updating the intentions of an agent, the sequence that led to a current state is insigniﬁcant compared to the probability of a state. We just want to know which process is most likely and respond to it if required, the transitions are just a way of getting to these states. For most uses on intelligent agents, every new observation would, after being added to the sequence, require a re-computation of the forward algorithm on this new state in time and if necessary a forward-backwards algorithm for ﬁnding potential intentions in important places earlier on with the extra information gained.</p>
         <p>The forward algorithm is deﬁned as follows (Wikipedia mathematics use)<sup id="p6"></sup>:</p>
         <p>We are trying to ﬁnd probability <span>p(x<sub>t</sub>, y<sub>1:t</sub>)</span>. <span>x<sub>t</sub></span> is the probability of state x at time t given all observations y up to time t (1 to t). If we want to calculate the entire probability distribution, we would do this calculation over all states X. The summation of said distribution should then, if the algorithm is performed correctly sum to 1. To efﬁciently compute the probability above, we make use of the rules for conditional independence in the HMM which are fairly simple due to only having dependence for directly preceding states. Using a combination of chain rules and model conditions this expression simpliﬁes to:</p>

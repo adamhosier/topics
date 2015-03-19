@@ -24,6 +24,7 @@ $(document).ready(function(){
     if(newpagename != pagename) {
       pagename = newpagename;
       $(".page").fadeOut(FADE_TIME);
+      window.scrollBy(0,-10000);
       $("#page-" + pagename).delay(FADE_TIME).fadeIn(FADE_TIME);
       setTimeout(updateNavigator, FADE_TIME * 2);
     }
