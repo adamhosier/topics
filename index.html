@@ -29,23 +29,31 @@
     <!-- INTRODUCTION PAGE -->
     <div class="page" id="page-introduction">
       <div class="box" title="Introduction">
-        <p>Intention recognition is the idea of analyzing the actions of an agent to predict what that agent's goal is. It can be described as the opposite of planning, where a goal is known and actions are planned to complete this goal. In intention recognition, the actions are known, and we must try to guess the goal of the agent.</p>
+        <p>Intention recognition is the idea of analyzing the actions of an agent to predict what that agent's goal is. It can be described as the opposite of planning, where a goal is known and actions are planned to complete this goal. In intention recognition, the actions are known, and we must try to guess the goal of the agent.<sup id="i1"></sup></p>
       </div>
       <div class="box" title="Early Work">
-        <p>The topic was first researched in the 1980s, where it was originally intended to help with automatic response generation, for example in computer help messages. The field today is must more widespread, there is research being done in creating ambient intelligence, sophisticated computer games and in military applications such as terrorism detection.</p>
+        <p>The topic was first researched in the 1980s, where it was originally intended to help with automatic response generation, for example in computer help messages.<sup id="i2"></sup> The field today is must more widespread, there is research being done in creating ambient intelligence, sophisticated computer games and in military applications such as terrorism detection.</p>
       </div>
       <div class="box" title="Overview">
-        <p>There are usually three components to consider when creating an intention recognition system. Firstly a set of end goals, or intentions that can be reached. Secondly some type of knowledge about how these goals can be reached and lastly the sequence of actions performed by the agent. Combining these three ideas it would be possible to recognise the goal of an agent.</p>
+        <p>There are usually three components to consider when creating an intention recognition system. Firstly a set of end goals, or intentions that can be reached. Secondly some type of knowledge about how these goals can be reached and lastly the sequence of actions performed by the agent. Combining these three ideas it would be possible to recognise the goal of an agent.<sup id="i1"></sup></p>
         <p>There are three main formalisms of intention recognition that we will explore further in this topic. You can read more about the logic-based, cased-based and probabilistic approaches in their respective pages.</p>
       </div>
       <div class="box" title="Example">
         <img src="airport.png" width="500px" height="300px" align="right">
         <p align="left">In this website we demonstrate the different techniques with a real world example.</p>
-        <p> Take a man in his 40s, acting nervously in an international airport. He has not checked in and is waiting in a crowded area with a single bag. He is sitting in the lower seating area, then is seen at the blue X rushing to the bathroom and leaving his bag at the position of the red X.</p>
-        <p> In this website we will explore different ways that can we design a system to recognise and appropriately respond to behaviours such as this.</p>
+        <p>Take a man in his 40s, acting nervously in an international airport. He has not checked in and is waiting in a crowded area with a single bag. He is sitting in the lower seating area, then is seen at the blue X rushing to the bathroom and leaving his bag at the position of the red X.</p>
+        <p>In this website we will explore different ways that can we design a system to recognise and appropriately respond to behaviours such as this.</p>
       </div>
       <div class="box" title="Comparison">
+        <p>Although working towards the same goal, each of the three formalisms explained in this document use different methods and implementations to recognise an agents intention. It is easiest to compare the Logic-based and Probabilistic approaches as the underlying concepts are reasonably similar. They both have a set of programmed rules that the system will follow. The main difference is that the rules in logic are concrete, e.g. the man in the airport is walking towards the telephone implies that his goal is to make a phone call. Whereas in a probabilistic approach, the fact that he is walking towards the telephone could mean that he is going to make a phone call, but there is also a chance that he is going to the bathroom, or perhaps planning a terrorist attack. Each of these situations will have a probability associated with it, so the intention recognised by a probabilistic system is a "best guess". The logic system could sometimes fail when regonising behaviour of a human, as we don't always follow a concrete set of rules, which could confuse the system, but the probabilistic approach knows that there is a chance that the human agent could be trying to do something else, and takes this into account in its probabilities. </p>
+        <p>A Cased-based implementation would look at the situation slightly differently. It would search a database looking for accounts of people behaving similarly, and looked at what they were trying to achieve. Using this information it can recognise the intent of an agent based on what it has seen in the past. The system could know that the last time it saw a human rushing in that direction, they were rushing to make an important phone call, so make a prediction that this is what is happening now. The main problem with this is that in some situations where an event is particularly rare, a certain type of behaviour might not have been witnessed before. It is possible that the system has never seen a man behaving in this way, so would have no idea what his intentions are. The same could potentially be said for the other formalisms, if a specific situation has not been programmed into them, they could also fail to recognise that situation.</p>
+      </div>
 
+      <div class="box" title="References">
+      <ol>
+        <li>Sadri, F., ‘Intention Recognition in Agents for Ambient Intelligence: Logic-Based Approaches’, Bosse, T. (ed.) Agents and Ambient Intelligence, Ambient Intelligence and Smart Environments, vol. 12, pp. 197–236. IOS Press. (2012)</li>
+        <li>Wilensky, R. (1983). Planning and understanding. Addison Wesley, Reading, MA, 1983.</li>
+      </ol>
       </div>
     </div>
 
