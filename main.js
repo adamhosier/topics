@@ -1,5 +1,5 @@
 var FADE_TIME = 100;
-var SCROLL_TIME = 0;
+var SCROLL_TIME = 100;
 var HEADER_OFFSET = 150; //pixels
 const REF_BOX_FADE_TIME = 200;
 

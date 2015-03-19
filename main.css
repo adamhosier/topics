@@ -183,8 +183,12 @@ a.anchor {
   margin:150px auto;
 }
 
-#content p, #content ol {
+#content p, #content ol, #content ul {
   font-size:14px;
+}
+
+#content span {
+  font-family:monospace;
 }
 
 #footer {
