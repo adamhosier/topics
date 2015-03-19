@@ -72,7 +72,7 @@ function updateNavigator() {
 
   //add onclick events to links
   $("#sub-links a").click(function() {
-    var element = $('.box[title="' + $(this).text() + '"]');
+    var element = $('.box[title="' + $(this).text() + '"]:visible');
     $("html, body").animate({
       scrollTop: element.offset().top - HEADER_OFFSET
     }, SCROLL_TIME)
